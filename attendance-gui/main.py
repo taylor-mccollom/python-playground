@@ -6,11 +6,11 @@ student_list = ['Phteven', 'Gregg', 'Ally', 'George']
 sg.theme('DarkAmber')
 
 # Window contents
-layout = [  [sg.Text('Some text on Row 1')]]
+layout = [[sg.Text('Attendance Roster')]]
 for student in student_list:
     selection = [sg.Text(student), sg.Button('Present', key=student)]
     layout.append(selection)
-layout_output = [sg.Output(size=(20, 20))]
+layout_output = [sg.Output(size=(20, 10))]
 layout.append(layout_output)
 layout_last_row = [sg.Button('Exit')]
 layout.append(layout_last_row)
